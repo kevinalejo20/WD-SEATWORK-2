@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.page.active {
+  display: block;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background: #111;
+  color: white;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+nav a {
+  display: block;
+  margin: 1rem 0;
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #111;
+  color: white;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+.page1 .hero {
+  background: url('https://68.media.tumblr.com/0354e580448fea50395b7ceef04f8d3d/tumblr_n3fveo4mTW1r85hlio1_500.gif') no-repeat center center/cover;
+  margin-left: 220px;
+  justify-content: flex-end;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.page2 .hero {
+  background: url('https://media.giphy.com/media/3OgHi2tEAXcSht4jRN/giphy.gif') no-repeat center center/cover;
+  margin-left: 220px;
+}
+
+.page3 .hero {
+  background: url('https://c.tenor.com/zQ6H2k7HwGcAAAAC/netflix-netflix-logo.gif') no-repeat center center/cover;
+  margin-left: 220px;
+}
+
+.page4 .hero {
+  background: url('https://cdn.dribbble.com/userupload/21518263/file/original-8953c5cfc4bf26578308d60adb6069e6.gif') no-repeat center center/cover;
+  margin-left: 220px;
+}
+
+.page5 .hero {
+  background: url('https://media2.giphy.com/media/NrqF5yVkgwzjq/giphy.gif') no-repeat center center/cover;
+  margin-left: 220px;
+}
+
+.bershka-description,
+.foodpanda-description,
+.netflix-description,
+.spotify-description,
+.youtube-description {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  max-width: 400px;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+}
+
+.bershka-description {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.foodpanda-description {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.netflix-description {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.spotify-description {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.youtube-description {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.visit-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.visit-btn:hover {
+  background: #ddd;
+}
+
+.next-btn {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.next-btn:hover {
+  background: #ccc;
+}
