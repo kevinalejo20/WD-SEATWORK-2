@@ -20,9 +20,9 @@ Built using **HTML**, **CSS**, and basic **JavaScript**, each hero section displ
 
 | Technology | Description | Link |
 |------------|-------------|------|
-| HTML5 | Webpage structure | [HTML Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) |
-| CSS3 | Styling and layout | [CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) |
-| JavaScript | Page switching functionality | [JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| HTML5 | Webpage structure | [HTML ](https://www.w3schools.com/html/) |
+| CSS3 | Styling and layout | [CSS ](https://www.w3schools.com/css/) |
+| JavaScript | Page switching functionality | [JavaScript](https://www.w3schools.com/js/default.asp) |
 
 ---
 
