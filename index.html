@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bershka Hero Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="nav">
+    <h2>Menu</h2>
+    <nav>
+      <a href="#" onclick="showPage(1)">Hero 1</a>
+      <a href="#" onclick="showPage(2)">Hero 2</a>
+      <a href="#" onclick="showPage(3)">Hero 3</a>
+      <a href="#" onclick="showPage(4)">Hero 4</a>
+      <a href="#" onclick="showPage(5)">Hero 5</a>
+    </nav>
+  </div>
+
+  <div class="topbar" id="topbar" style="display: none;">
+    <h2 id="topbar-title">Topbar</h2>
+  </div>
+
+  <div class="page page1 active">
+    <div class="hero">
+      <div class="bershka-description">
+        <h1>Bershka Man Collection</h1>
+        <p>Explore the latest fashion for men in streetwear, basics, and essentials.</p>
+        <a href="https://www.bershka.com/ph/h-man.html" target="_blank" class="visit-btn">Visit Bershka</a>
+        <br><br>
+        <button class="next-btn" onclick="showPage(2)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page page2">
+    <div class="hero">
+      <div class="foodpanda-description">
+        <h1>Foodpanda Delivery</h1>
+        <p>Get your favorite meals and groceries delivered fast and fresh.</p>
+        <a href="https://www.foodpanda.ph" target="_blank" class="visit-btn">Visit Foodpanda</a>
+        <br><br>
+        <button class="next-btn" onclick="showPage(3)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page page3">
+    <div class="hero">
+      <div class="netflix-description">
+        <h1>Netflix</h1>
+        <p>Endless entertainment. Movies, shows, and originals made for you.</p>
+        <a href="https://www.netflix.com" target="_blank" class="visit-btn">Go to Netflix</a>
+        <br><br>
+        <button class="next-btn" onclick="showPage(4)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page page4">
+    <div class="hero">
+      <div class="spotify-description">
+        <h1>Spotify</h1>
+        <p>Discover music from artists around the world with personalized playlists.</p>
+        <a href="https://www.spotify.com" target="_blank" class="visit-btn">Go to Spotify</a>
+        <br><br>
+        <button class="next-btn" onclick="showPage(5)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page page5">
+    <div class="hero">
+      <div class="youtube-description">
+        <h1>YouTube</h1>
+        <p>Watch and share videos from around the world. Discover trending content.</p>
+        <a href="https://www.youtube.com" target="_blank" class="visit-btn">Visit YouTube</a>
+        <br><br>
+        <button class="next-btn" onclick="showPage(1)">Back to Start</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showPage(pageNumber) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(p => p.classList.remove('active'));
+      document.querySelector('.page' + pageNumber).classList.add('active');
+
+      const topbar = document.getElementById('topbar');
+      const title = document.getElementById('topbar-title');
+
+      if (pageNumber === 2) {
+        topbar.style.display = 'block';
+        title.textContent = 'About Us';
+      } else if (pageNumber === 4) {
+        topbar.style.display = 'block';
+        title.textContent = 'Portfolio';
+      } else {
+        topbar.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
