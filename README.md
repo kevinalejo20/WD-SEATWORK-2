@@ -11,7 +11,7 @@ Built using **HTML**, **CSS**, and basic **JavaScript**, each hero section displ
 - 🎯 5 fullscreen hero pages with animated GIF backgrounds  
 - 🧭 Fixed sidebar menu for navigation  
 - 🔁 "Next" buttons to cycle through each section  
-- 📌 Topbar appears only on select pages (like About Us and Portfolio)  
+- 📌 Topbar appears only on select pages  
 - 🔗 Brand descriptions with links to official websites  
 
 ---
